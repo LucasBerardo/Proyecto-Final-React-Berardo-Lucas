@@ -1,0 +1,30 @@
+.nav-container {
+   font-size: medium;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: rgba(34, 52, 52, 0.638);
+   
+}
+
+
+
+.rutas {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        margin: 5px;
+        background-color: rgb(34, 52, 52);
+       
+
+        &:hover { 
+            text-decoration-line: underline;
+            color: rgba(84, 151, 103, 0.789);
+            
+        }
+}
+
+
+
+div .cart-widget-container {
+    display: flex;
+    justify-content: center;
+}
