@@ -1,6 +1,6 @@
-import './styles.css';
+import './Saludo.css';
 
-const Saludo = ({ greeting }) => {
+function Saludo({ greeting }) {
     return (
         <div className="saludo">
             <h1 className="saludo-principal">{greeting}</h1>

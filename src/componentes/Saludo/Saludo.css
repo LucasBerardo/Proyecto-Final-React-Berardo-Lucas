@@ -1,7 +1,8 @@
-.saludo-principal {
+h1.saludo-principal {
     font-size: 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: lightgray;
-    background-color: rgba(34, 52, 52, 0.638);
+  
+    margin-top: 50px ;
 }

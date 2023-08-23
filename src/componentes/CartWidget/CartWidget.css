@@ -1,0 +1,12 @@
+div.img-container {
+    height: 150%;
+    width: 100%;
+    object-fit: cover;
+    display:  flex;
+    align-items: center;
+}
+
+img.img-carrito {
+    height: 35px;
+    width:  35px;
+}
