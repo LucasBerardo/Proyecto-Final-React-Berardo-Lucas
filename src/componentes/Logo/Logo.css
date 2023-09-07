@@ -1,0 +1,8 @@
+img.img-Logo {
+    width: 30%;
+    object-fit: cover;
+    display:  flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color:rgba(34, 52, 52, 0.638)
+}

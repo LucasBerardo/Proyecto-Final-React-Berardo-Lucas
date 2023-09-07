@@ -12,12 +12,13 @@ nav {
  }
  
  
- button.rutas {
+a.rutas {
          list-style-type: none;
          text-decoration: none;
          text-align: center;
          margin: 5px;
-         background-color: rgb(34, 52, 52);
+         color: black;
+         padding: 0 10px;
         
  
          &:hover { 
@@ -26,8 +27,29 @@ nav {
              
          }
  }
+
+ a.categorias {
+    list-style-type: none;
+         text-decoration: none;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         margin: 5px;
+         color: black;
+
+         &:hover { 
+            text-decoration-line: underline;
+            color: rgba(84, 151, 103, 0.789);
+            
+        }
+ }
+
+
  
- 
+ div.Logo-Nuts {
+    width: 20%;
+    
+ }
  
  div .cart-widget-container {
      display: flex;

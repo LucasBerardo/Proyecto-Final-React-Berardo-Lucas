@@ -1,5 +1,7 @@
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
+import LogoTipo from "../Logo/Logo"
+
 
 const NavBar = () => {
 
@@ -7,25 +9,26 @@ const NavBar = () => {
         
 <nav className='nav-container'>
 
-  <div>
-    LOGO
+  <div className="Logo-Nuts">
+   <LogoTipo />
   </div>
 
 
-<div className="btn-group" role="group" aria-label="Default button group">
-  <button type="button" className="rutas ">Inicio</button>
-  <button class="rutas dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+<div className="rutas" >
+ 
+ <a href="#" className="rutas ">Inicio</a>
+ <a href="#" class="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Categorias
-  </button>
+  </a>
   <ul class="dropdown-menu">
     <li> <a className="categorias" href="Frutos Secos"> Frutos Secos</a></li>
     <li> <a className="categorias" href="Frutos Secos"> Condimentos</a></li>
     <li> <a className="categorias" href="Frutos Secos"> Frutas Abrillantadas</a></li>
   </ul>
-  <button type="button" className="rutas ">Sobre Nosotros</button>
+ <a href="#"  className="rutas ">Sobre Nosotros</a>
   
-  <button type="button" className="rutas">Contacto</button>
-  
+  <a href="#" className="rutas">Contacto</a>
+ 
 </div>
 
 <div>
