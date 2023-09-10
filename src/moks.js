@@ -5,7 +5,7 @@ const products = [
       "img": "nueces1.jpg",
       "precio": 1000,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutas Abrillantadas"
     },
 
     {
@@ -14,7 +14,7 @@ const products = [
       "img": "almendras.webp",
       "precio": 2000,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutos Secos"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@ const products = [
       "img": "pistachos.jpg",
       "precio": 1500,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutos Secos"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@ const products = [
       "img": "avellanas.jpg",
       "precio": 1850,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "FrutosSecos"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@ const products = [
       "img": "castañas.jpg",
       "precio": 1850,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Condimentos"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@ const products = [
       "img": "Coco.webp",
       "precio": 1800,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutos Secos"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@ const products = [
       "img": "pasasdeuvas.jpg",
       "precio": 700,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutos Secos"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@ const products = [
       "img": "mani.png",
       "precio": 600,
       "stock": 1,
-      "descripcion": "Frutos Secos"
+      "categoria": "Frutos Secos"
     }
     ]
 

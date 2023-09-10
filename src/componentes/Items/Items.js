@@ -1,7 +1,9 @@
 import React from "react"
 import "./Items.css"
+import { Link } from "react-router-dom"
 
-const Items = ({id,nombre,img,precio,stock,descripcion}) =>{
+
+const Items = ({id,nombre,img,precio,stock,categoria}) =>{
     return(
        
         <card className="card">
@@ -13,17 +15,12 @@ const Items = ({id,nombre,img,precio,stock,descripcion}) =>{
             <picture>
                 <img className="img-prod"src={`/img/${img}`} alt={nombre}/>
             </picture>
-            <section>
-                <p>
-                    Precio: ${precio}
+            <p>
+                Categoria: {categoria}
                 </p>
-                <p>
-                    Stock Disponible: {stock}
-                </p>
-                <p>
-                   Categoria: {descripcion}
-                </p>
-            </section>
+            <Link className="button-ver-mas" to={`/Items/${id}`}> Ver Detalle</Link> 
+                
+            
 
         </card>
        

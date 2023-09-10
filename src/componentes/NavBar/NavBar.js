@@ -1,6 +1,7 @@
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 import LogoTipo from "../Logo/Logo"
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -16,19 +17,21 @@ const NavBar = () => {
 
 <div className="rutas" >
  
- <a href="#" className="rutas ">Inicio</a>
- <a href="#" class="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+<Link to="/" className="rutas">Inicio</Link>
+ <Link to="/Productos" className="rutas ">Productos</Link>
+ <Link to="/Categorias" class="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Categorias
-  </a>
+  </Link>
   <ul class="dropdown-menu">
-    <li> <a className="categorias" href="Frutos Secos"> Frutos Secos</a></li>
-    <li> <a className="categorias" href="Frutos Secos"> Condimentos</a></li>
-    <li> <a className="categorias" href="Frutos Secos"> Frutas Abrillantadas</a></li>
-  </ul>
- <a href="#"  className="rutas ">Sobre Nosotros</a>
+    <li> <Link className="categorias" to="/Categorias/Frutos Secos"> Frutos Secos</Link></li>
+    <li> <Link className="categorias" to="/Categorias/Condimentos"> Condimentos</Link></li>
+    <li> <Link className="categorias" to="/Categorias/Frutas Abrillantadas"> Frutas Abrillantadas</Link></li>
+  </ul> 
+
+ <Link to="/SobreNosotros"  className="rutas ">Sobre Nosotros</Link>
   
-  <a href="#" className="rutas">Contacto</a>
- 
+  <Link to="/Contacto" className="rutas">Contacto</Link>
+
 </div>
 
 <div>

@@ -1,7 +1,7 @@
 import React from "react"
 import ItemsCount from "../ItemCount/ItemCount"
 
-const ItemsDetail = ({nombre,img,precio,stock,descripcion}) =>{
+const ItemsDetail = ({nombre,img,precio,stock,categoria}) =>{
     return(
        
         <article className="card">
@@ -21,7 +21,7 @@ const ItemsDetail = ({nombre,img,precio,stock,descripcion}) =>{
                     Stock Disponible: {stock}
                 </p>
                 <p>
-                   Categoria: {descripcion}
+                   Categoria: {categoria}
                 </p>
             </section>
             <footer>

@@ -2,7 +2,8 @@ import './App.css';
 import ItemsListContainer from './componentes/ItemsListContainer/ItemsListContainer';
 import NavBar from './componentes/NavBar/NavBar';
 import Saludo from './componentes/Saludo/Saludo.js';
-// import ItemCount from './componentes/ItemCount/ItemCount';
+import Contacto from './componentes/Pages/Contacto/Contacto';
+import Inicio from './componentes/Pages/Inicio/Inicio'
 import ItemsDetailContainer from './componentes/ItemsDetailContainer/ItemsDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -16,9 +17,14 @@ function App() {
     <NavBar />
     
     <Routes>
-    <Route path='/' element={<ItemsListContainer/>}  />
+     
     <Route path='/' element={<Saludo greeting={('BIENVENIDOS A NUTS')}/>}/>
-    <Route path='/items' element={<ItemsDetailContainer/>} />
+    <Route path='/' element={<Inicio/>}/>
+    <Route path='/Productos' element={<ItemsListContainer/>}/>
+    <Route path='/items/:id' element={<ItemsDetailContainer/>} />
+    <Route path='/Contacto' element={<Contacto/>}  />
+    <Route path='/Categorias/:categoria' element={<ItemsListContainer/>} />
+
 
     </Routes>
       
