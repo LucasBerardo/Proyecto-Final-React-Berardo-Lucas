@@ -1,28 +1,30 @@
 import './App.css';
-import ItemsListContainer from './componentes/ItemsListContainer/ItemsListContainer'
+import ItemsListContainer from './componentes/ItemsListContainer/ItemsListContainer';
 import NavBar from './componentes/NavBar/NavBar';
 import Saludo from './componentes/Saludo/Saludo.js';
-import ItemCount from './componentes/ItemCount/ItemCount';
-import { BrowserRouter } from 'react-router-dom';
-
-
+// import ItemCount from './componentes/ItemCount/ItemCount';
+import ItemsDetailContainer from './componentes/ItemsDetailContainer/ItemsDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-<BrowserRouter>
-<NavBar />
+
+
   <div className="App">
+    <BrowserRouter>
+    <NavBar />
     
+    <Routes>
+    <Route path='/' element={<ItemsListContainer/>}  />
+    <Route path='/' element={<Saludo greeting={('BIENVENIDOS A NUTS')}/>}/>
+    <Route path='/items' element={<ItemsDetailContainer/>} />
+
+    </Routes>
       
-      <Saludo greeting={('BIENVENIDOS A NUTS')}/>
-
-      <ItemsListContainer />
-
-      <ItemCount  initial={1} stock={10} onAdd={(quantity)=> console.log ('cantidad agregada', quantity)}/>
-     
+       </BrowserRouter>
     </div>
-    </BrowserRouter>
+    
    
 );
 }

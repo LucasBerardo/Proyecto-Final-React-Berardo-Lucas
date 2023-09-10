@@ -2,7 +2,7 @@ const products = [
     {
       "id": 1,
       "nombre": "Nueces",
-      "img": "./img/nueces1.jpg",
+      "img": "nueces1.jpg",
       "precio": 1000,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -11,7 +11,7 @@ const products = [
     {
       "id": 2,
       "nombre": "Almendras",
-      "img": "../img/almendras.webp",
+      "img": "almendras.webp",
       "precio": 2000,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -19,7 +19,7 @@ const products = [
     {
       "id": 3,
       "nombre": "Pistachos",
-      "img": "../img/pistachos.jpg",
+      "img": "pistachos.jpg",
       "precio": 1500,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -27,7 +27,7 @@ const products = [
     {
       "id": 4,
       "nombre": "Avellanas",
-      "img": "../img/avellanas.jpg",
+      "img": "avellanas.jpg",
       "precio": 1850,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -35,7 +35,7 @@ const products = [
     {
       "id": 5,
       "nombre": "Castañas",
-      "img": "../img/castañas.jpg",
+      "img": "castañas.jpg",
       "precio": 1850,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -43,7 +43,7 @@ const products = [
     {
       "id": 6,
       "nombre": "Coco",
-      "img": "../img/Coco.webp",
+      "img": "Coco.webp",
       "precio": 1800,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -51,7 +51,7 @@ const products = [
     {
       "id": 7,
       "nombre": "Pasas De Uvas",
-      "img": "../img/pasasdeuvas.jpg",
+      "img": "pasasdeuvas.jpg",
       "precio": 700,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -59,7 +59,7 @@ const products = [
     {
       "id": 8,
       "nombre": "mani",
-      "img": "../img/mani.png",
+      "img": "mani.png",
       "precio": 600,
       "stock": 1,
       "descripcion": "Frutos Secos"
@@ -74,7 +74,15 @@ const products = [
           },500)
   
          
-      })
+      })}
+
+      export const getProductsId = (productsId) =>  {
+        return new Promise ((resolve) =>{
+            setTimeout ( ()=>{
+                resolve(products.find (prod => prod.id === productsId));
+            },500)
+  
+        })
   
   }
   

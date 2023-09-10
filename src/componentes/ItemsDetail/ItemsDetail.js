@@ -1,10 +1,10 @@
 import React from "react"
-import "./Items.css"
+import ItemsCount from "../ItemCount/ItemCount"
 
-const Items = ({id,nombre,img,precio,stock,descripcion}) =>{
+const ItemsDetail = ({nombre,img,precio,stock,descripcion}) =>{
     return(
        
-        <card className="card">
+        <article className="card">
             <header>
                 <h2>
                     {nombre}
@@ -24,12 +24,12 @@ const Items = ({id,nombre,img,precio,stock,descripcion}) =>{
                    Categoria: {descripcion}
                 </p>
             </section>
+            <footer>
+            <ItemsCount initial={1} stock={stock} onAdd={(quantity)=>console.log("cantidad agregada", quantity)} />
+            </footer>
+        </article>
 
-        </card>
-       
     )
-    
-
 }
 
-export default Items
+    export default ItemsDetail
