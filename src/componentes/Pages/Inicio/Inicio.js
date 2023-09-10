@@ -2,9 +2,9 @@ import React from "react";
 
 const Inicio = () => {
     return(
-        <div>
-            ACA VA EL INICIO DE LA WEB
-        </div>
+    <div>
+        Aca va el icono en grande
+    </div>
     )
 }
 

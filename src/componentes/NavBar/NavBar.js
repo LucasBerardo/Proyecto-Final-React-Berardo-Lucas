@@ -17,7 +17,7 @@ const NavBar = () => {
 
 <div className="rutas" >
  
-<Link to="/" className="rutas">Inicio</Link>
+<Link className="rutas" to="/">Inicio</Link>
  <Link to="/Productos" className="rutas ">Productos</Link>
  <Link to="/Categorias" class="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Categorias

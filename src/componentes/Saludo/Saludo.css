@@ -6,3 +6,15 @@ h1.saludo-principal {
     background-color: rgba(34, 52, 52, 0.638); 
     margin-top: 50px ;
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+div{
+
+    justify-content: center;
+}

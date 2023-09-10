@@ -14,11 +14,12 @@ function App() {
 
   <div className="App">
     <BrowserRouter>
+
     <NavBar />
     
     <Routes>
-     
-    <Route path='/' element={<Saludo greeting={('BIENVENIDOS A NUTS')}/>}/>
+    
+    <Route path='/' element={<Saludo greeting={('NUTS - SNACK SALUDABLE')}/>}/>
     <Route path='/' element={<Inicio/>}/>
     <Route path='/Productos' element={<ItemsListContainer/>}/>
     <Route path='/items/:id' element={<ItemsDetailContainer/>} />
