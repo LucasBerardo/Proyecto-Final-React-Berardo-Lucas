@@ -3,9 +3,10 @@ import ItemsListContainer from './componentes/ItemsListContainer/ItemsListContai
 import NavBar from './componentes/NavBar/NavBar';
 import Saludo from './componentes/Saludo/Saludo.js';
 import Contacto from './componentes/Pages/Contacto/Contacto';
-import Inicio from './componentes/Pages/Inicio/Inicio'
+import Inicio from './componentes/Pages/Inicio/Inicio';
 import ItemsDetailContainer from './componentes/ItemsDetailContainer/ItemsDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Productos from './componentes/Pages/Productos/Productos';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     
     <Route path='/' element={<Saludo greeting={('NUTS - SNACK SALUDABLE')}/>}/>
     <Route path='/' element={<Inicio/>}/>
-    <Route path='/Productos' element={<ItemsListContainer/>}/>
+    <Route path='/Productos' element={<Productos/>}/>
     <Route path='/items/:id' element={<ItemsDetailContainer/>} />
     <Route path='/Contacto' element={<Contacto/>}  />
     <Route path='/Categorias/:categoria' element={<ItemsListContainer/>} />
