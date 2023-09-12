@@ -1,10 +1,11 @@
 import React from "react"
 import ItemsCount from "../ItemCount/ItemCount"
+import "./ItemsDetail.css"
 
 const ItemsDetail = ({nombre,img,precio,stock,categoria}) =>{
     return(
        
-        <article className="card">
+        <card className="card">
             <header>
                 <h2>
                     {nombre}
@@ -27,7 +28,7 @@ const ItemsDetail = ({nombre,img,precio,stock,categoria}) =>{
             <footer>
             <ItemsCount initial={1} stock={stock} onAdd={(quantity)=>console.log("cantidad agregada", quantity)} />
             </footer>
-        </article>
+        </card>
 
     )
 }

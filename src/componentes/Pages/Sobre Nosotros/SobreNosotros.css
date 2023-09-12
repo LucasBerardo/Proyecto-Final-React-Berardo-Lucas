@@ -1,0 +1,12 @@
+p.text-historia {
+    margin: 20px 0px;
+    padding: 20px;
+    font-size: 24px;
+    text-align: justify;
+    background-color: rgba(173, 179, 154, 0.537);
+    
+}
+
+div.historia {
+    margin: 20px 0;
+}

@@ -58,7 +58,7 @@ const products = [
     },
     {
       "id": 8,
-      "nombre": "mani",
+      "nombre": "Mani",
       "img": "mani.png",
       "precio": 600,
       "stock": 1,

@@ -7,6 +7,8 @@ import Inicio from './componentes/Pages/Inicio/Inicio';
 import ItemsDetailContainer from './componentes/ItemsDetailContainer/ItemsDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Productos from './componentes/Pages/Productos/Productos';
+import SobreNosotros from './componentes/Pages/Sobre Nosotros/SobreNosotros';
+import Footer from './componentes/Footer/Footer';
 
 
 function App() {
@@ -15,21 +17,27 @@ function App() {
 
   <div className="App">
     <BrowserRouter>
-
-    <NavBar />
-    
-    <Routes>
-    
+<nav>
+   <NavBar />
+</nav>
+   
+<main>
+    <Routes> 
+   
     <Route path='/' element={<Saludo greeting={('NUTS - SNACK SALUDABLE')}/>}/>
     <Route path='/' element={<Inicio/>}/>
     <Route path='/Productos' element={<Productos/>}/>
     <Route path='/items/:id' element={<ItemsDetailContainer/>} />
     <Route path='/Contacto' element={<Contacto/>}  />
+    <Route path='/SobreNosotros' element={<SobreNosotros/>}  />
     <Route path='/Categorias/:categoria' element={<ItemsListContainer/>} />
-
+   
 
     </Routes>
-      
+    </main>
+<footer>
+    <Footer />
+    </footer>
        </BrowserRouter>
     </div>
     
