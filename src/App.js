@@ -17,11 +17,9 @@ function App() {
 
   <div className="App">
     <BrowserRouter>
-<nav>
+
    <NavBar />
-</nav>
-   
-<main>
+
     <Routes> 
    
     <Route path='/' element={<Saludo greeting={('NUTS - SNACK SALUDABLE')}/>}/>
@@ -34,10 +32,9 @@ function App() {
    
 
     </Routes>
-    </main>
-<footer>
+
     <Footer />
-    </footer>
+  
        </BrowserRouter>
     </div>
     
