@@ -9,7 +9,7 @@ function Saludo({ greeting }) {
             
         </div>
 
-        <div>
+        <div >
 
            <img src='/img/logo.jpg'/>
 

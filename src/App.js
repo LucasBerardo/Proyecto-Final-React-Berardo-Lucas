@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Productos from './componentes/Pages/Productos/Productos';
 import SobreNosotros from './componentes/Pages/Sobre Nosotros/SobreNosotros';
 import Footer from './componentes/Footer/Footer';
+import Loader from './componentes/Loader/Loader';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     <BrowserRouter>
 
    <NavBar />
-
+<body className='body'>
     <Routes> 
    
     <Route path='/' element={<Saludo greeting={('NUTS - SNACK SALUDABLE')}/>}/>
@@ -32,7 +33,7 @@ function App() {
    
 
     </Routes>
-
+    </body>
     <Footer />
   
        </BrowserRouter>

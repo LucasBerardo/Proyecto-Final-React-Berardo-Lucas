@@ -1,3 +1,5 @@
+
+
 const products = [
     {
       "id": 1,
@@ -71,7 +73,7 @@ const products = [
       return new Promise ((resolve) =>{
           setTimeout ( ()=>{
               resolve (products)
-          },500)
+          },700)
   
          
       })}
