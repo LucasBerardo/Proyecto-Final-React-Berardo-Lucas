@@ -1,0 +1,32 @@
+img.img-carrito {
+    object-fit: cover;
+    width: 100px;
+    height: 100px; 
+    border-radius: 100%;
+    padding: 50px;
+    margin-left: 40px;
+}
+
+div.Carrito {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    border: solid 5px black;
+    background-color: beige;
+    margin: 5px 0 ;
+}
+
+.prod-carrito{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    margin-left: 40px;
+}
+.remover{
+    cursor: pointer;
+}
+
+.titulo{
+    font-weight: bold;
+
+}

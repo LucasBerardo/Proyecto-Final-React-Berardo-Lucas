@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const Items = ({id,nombre,img,precio,stock,categoria}) =>{
     return(
        
-        <card className="card">
+        <div className="card">
             <header>
                 <h2>
                     {nombre}
@@ -20,9 +20,7 @@ const Items = ({id,nombre,img,precio,stock,categoria}) =>{
                 </p>
             <Link className="button-ver-mas" to={`/Items/${id}`}> Ver Detalle</Link> 
                 
-            
-
-        </card>
+        </div>
        
     )
     

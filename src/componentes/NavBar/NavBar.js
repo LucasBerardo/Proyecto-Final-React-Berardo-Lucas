@@ -1,11 +1,15 @@
-import CartWidget from "../CartWidget/CartWidget";
+
 import './NavBar.css';
+import '../CartWidget/CartWidget.css'
 import LogoTipo from "../Logo/Logo"
+import cart from "../CartWidget/assets/cart.svg"
 import { Link } from "react-router-dom";
+import { CartContex } from "../../Context/CartContext";
+import { useContext } from "react";
 
 
 const NavBar = () => {
-
+  const { cantidadEnCarrito} = useContext(CartContex)
     return(
         
 <nav className='nav-container'>
@@ -19,7 +23,7 @@ const NavBar = () => {
  
 <Link className="rutas" to="/">Inicio</Link>
  <Link to="/Productos" className="rutas ">Productos</Link>
- <Link to="/Categorias" class="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+ <Link to="/Categorias" className="rutas dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Categorias
   </Link>
   <ul class="dropdown-menu">
@@ -29,13 +33,13 @@ Categorias
   </ul> 
 
  <Link to="/SobreNosotros"  className="rutas ">Sobre Nosotros</Link>
-  
   <Link to="/Contacto" className="rutas">Contacto</Link>
-
 </div>
 
 <div>
-  <CartWidget />
+<Link to="/Carrito" className="rutas"> <img className='img-carrito' src={cart} alt='cart-widget' />
+<span>  {cantidadEnCarrito()} </span> </Link>
+ 
    </div>
  </nav>
        

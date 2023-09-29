@@ -1,5 +1,5 @@
-import React from "react"
 import "./SobreNosotros.css"
+
 
 const SobreNosotros = () => {
 

@@ -2,7 +2,7 @@ card.card {
     background-color: rgba(173, 179, 154);
     justify-content: center;
     opacity: 0.85;
-margin: 10px;
+margin: 60px 500px;
 box-shadow: 2px 2px 2px 2px;
 text-align: center;
 padding: 0;
@@ -11,5 +11,16 @@ padding: 0;
     opacity: 1;
     }
 
+}
+
+a.terminar-compra{
+    color: black;
+    box-shadow: 0 0 0 2px;
+      width: 35%;
+      position: relative;
+      left: 33%;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-weight: bold;
 }
 

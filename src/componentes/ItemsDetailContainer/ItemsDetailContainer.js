@@ -4,12 +4,17 @@ import {getProductsId} from "../../moks"
 import ItemsDetail from "../ItemsDetail/ItemsDetail"
 import { useParams } from "react-router-dom";
 
+
+
 const ItemsDetailContainer = () => {
 
     const [products, setProducts] = useState(null)
     const id = useParams().id;
 
+    const [loading, setLoading]=useState(false)
+
     useEffect (()=>{
+        setLoading(true)
         getProductsId (+id)
         .then (response =>{
             setProducts (response)
@@ -17,12 +22,17 @@ const ItemsDetailContainer = () => {
         .catch (error=>{
             console.error(error);
         })
+        .finally( () => setLoading (false) )
+
     }, [id])
 
 
 return (
-    <div>
-        <ItemsDetail {...products}/>
+    <div className="productos-detail">
+        {
+            loading ? (<span className="loader">Loading...</span>) : (<ItemsDetail {...products}/>)
+        }
+        
     </div>
 )
 

@@ -5,11 +5,12 @@ import "./ItemsListContainer.css"
 import { useParams } from "react-router-dom";
 
 
+
 const ItemsListContainer = () => {
 
 
    const [products, setProducts] = useState([]);
-   const [titulo, setTitulo] = useState ("Productos")
+   const [titulo, setTitulo] = useState ("Productos");
 
    const categoria = useParams().categoria;
    
@@ -27,14 +28,19 @@ setTitulo (categoria);
     }
 
           })
+          .catch (error=>{
+            console.error(error);
+        })
+       
+
 }, [categoria])
 
 
     return (
 
     <section>
-        <h1> {titulo} </h1>
-     
+        <h1> {titulo} </h1> 
+
         <div className="productos-inicio">
     
 

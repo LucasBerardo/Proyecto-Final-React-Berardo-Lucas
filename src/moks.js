@@ -1,12 +1,10 @@
-
-
 const products = [
     {
       "id": 1,
       "nombre": "Nueces",
       "img": "nueces1.jpg",
       "precio": 1000,
-      "stock": 1,
+      "stock": 10,
       "categoria": "Frutas Abrillantadas"
     },
 
@@ -15,7 +13,7 @@ const products = [
       "nombre": "Almendras",
       "img": "almendras.webp",
       "precio": 2000,
-      "stock": 1,
+      "stock": 5,
       "categoria": "Frutos Secos"
     },
     {
@@ -23,7 +21,7 @@ const products = [
       "nombre": "Pistachos",
       "img": "pistachos.jpg",
       "precio": 1500,
-      "stock": 1,
+      "stock": 30,
       "categoria": "Frutos Secos"
     },
     {
@@ -31,7 +29,7 @@ const products = [
       "nombre": "Avellanas",
       "img": "avellanas.jpg",
       "precio": 1850,
-      "stock": 1,
+      "stock": 41,
       "categoria": "FrutosSecos"
     },
     {
@@ -39,7 +37,7 @@ const products = [
       "nombre": "Castañas",
       "img": "castañas.jpg",
       "precio": 1850,
-      "stock": 1,
+      "stock": 15,
       "categoria": "Condimentos"
     },
     {
@@ -47,7 +45,7 @@ const products = [
       "nombre": "Coco",
       "img": "Coco.webp",
       "precio": 1800,
-      "stock": 1,
+      "stock": 69,
       "categoria": "Frutos Secos"
     },
     {
@@ -55,7 +53,7 @@ const products = [
       "nombre": "Pasas De Uvas",
       "img": "pasasdeuvas.jpg",
       "precio": 700,
-      "stock": 1,
+      "stock": 0,
       "categoria": "Frutos Secos"
     },
     {
@@ -63,7 +61,7 @@ const products = [
       "nombre": "Mani",
       "img": "mani.png",
       "precio": 600,
-      "stock": 1,
+      "stock": 70,
       "categoria": "Frutos Secos"
     }
     ]
@@ -73,7 +71,7 @@ const products = [
       return new Promise ((resolve) =>{
           setTimeout ( ()=>{
               resolve (products)
-          },700)
+          },500)
   
          
       })}

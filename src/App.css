@@ -38,7 +38,6 @@
   }
 }
 
-body.body{
-  position: relative; 
+body.body {
   min-height: 100vh;
 }
