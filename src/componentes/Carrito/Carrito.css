@@ -1,10 +1,9 @@
 img.img-carrito {
     object-fit: cover;
     width: 100px;
-    height: 100px; 
-    border-radius: 100%;
-    padding: 50px;
-    margin-left: 40px;
+    height: 100px;
+   border-radius: 100%;
+
 }
 
 div.Carrito {
@@ -14,13 +13,15 @@ div.Carrito {
     border: solid 5px black;
     background-color: beige;
     margin: 5px 0 ;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .prod-carrito{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 50px;
-    margin-left: 40px;
+    width: 200px;
+   
 }
 .remover{
     cursor: pointer;

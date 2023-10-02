@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./ItemsDetailContainer.css";
-import {getProductsId} from "../../moks"
 import ItemsDetail from "../ItemsDetail/ItemsDetail"
 import { useParams } from "react-router-dom";
-
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../Firebase/config"
 
 
 const ItemsDetailContainer = () => {
@@ -15,15 +15,17 @@ const ItemsDetailContainer = () => {
 
     useEffect (()=>{
         setLoading(true)
-        getProductsId (+id)
-        .then (response =>{
-            setProducts (response)
-        })
-        .catch (error=>{
-            console.error(error);
-        })
-        .finally( () => setLoading (false) )
-
+        const docRef = doc (db, "Productos", id);
+    getDoc(docRef)
+    .then((resp)=>{
+        setProducts(
+            {...resp.data(),id: resp.id }
+        )
+    })
+    .catch (error=>{
+        console.error(error);
+    })
+    .finally( () => setLoading (false) )
     }, [id])
 
 

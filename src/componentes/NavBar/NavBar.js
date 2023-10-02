@@ -37,7 +37,7 @@ Categorias
 </div>
 
 <div>
-<Link to="/Carrito" className="rutas"> <img className='img-carrito' src={cart} alt='cart-widget' />
+<Link to="/Carrito" className="rutas"> <img className='icon-carrito' src={cart} alt='cart-widget' />
 <span>  {cantidadEnCarrito()} </span> </Link>
  
    </div>

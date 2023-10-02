@@ -12,7 +12,7 @@ const ItemsDetail = ({id,nombre,img,precio,stock,categoria}) =>{
     const agregarProducto = (quantity ) =>{
         setcantidadAgregada(quantity)
         const items = {
-            id,nombre, precio
+            id,nombre, precio, img
         }
         agregarItems( items, quantity)
     }

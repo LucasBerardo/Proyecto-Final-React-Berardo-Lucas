@@ -4,8 +4,9 @@ import { Link } from "react-router-dom"
 import "../Carrito/Carrito.css"
 
 
+
 const Carrito = () =>{
-    const {carrito, limpiarCarrito, totalQuantity ,total, removerItems} = useContext(CartContex)
+    const {carrito, limpiarCarrito, totalQuantity ,total, removerItems, totalEnCarrito} = useContext(CartContex)
 
     if(totalQuantity === 0) {
         return (
@@ -28,14 +29,16 @@ const Carrito = () =>{
                     <p className="prod-carrito">Precio ${prod.precio}</p>
                     <p className="prod-carrito"> Canitdad: {prod.cantidad}</p>
                     <p className="prod-carrito">Total Producto $ {prod.precio*prod.cantidad}</p>      
-                    <span className="prod-carrito remover" onClick={ ()=> {removerItems()} }> ❌ </span>
+                    <span className="prod-carrito remover" onClick={ ()=> {removerItems(prod.id)} }> ❌ </span>
+
                    
                 </div>
             ))
         }
-        <h3>Total: ${total}</h3>
+        <h3>Total: ${totalEnCarrito()}</h3>
        
     <button onClick={()=> limpiarCarrito()}>Limpiar  Carrito</button>
+    <Link to="/checkout"> Finalizar Compra </Link>
        </div>
     )}
 

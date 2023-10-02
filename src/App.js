@@ -11,6 +11,7 @@ import SobreNosotros from './componentes/Pages/Sobre Nosotros/SobreNosotros';
 import Footer from './componentes/Footer/Footer';
 import { CartProvider } from './Context/CartContext';
 import Carrito from './componentes/Carrito/Carrito';
+import Checkout from './componentes/Checkout/Checkout';
 
 
 
@@ -33,6 +34,7 @@ function App() {
     <Route path='/SobreNosotros' element={<SobreNosotros/>}  />
     <Route path='/Categorias/:categoria' element={<ItemsListContainer/>} />
     <Route path='/Carrito' element={<Carrito/>} />
+    <Route path='/checkout' element={<Checkout/>} />
     <Route path='/*' element="NOT FOUND 404"/>
 
     </Routes>

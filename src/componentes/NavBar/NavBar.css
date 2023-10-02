@@ -55,3 +55,9 @@ a.rutas {
      display: flex;
      justify-content: center;
  }
+
+ .icon-carrito {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+ }

@@ -30,7 +30,7 @@ const products = [
       "img": "avellanas.jpg",
       "precio": 1850,
       "stock": 41,
-      "categoria": "FrutosSecos"
+      "categoria": "Frutos Secos"
     },
     {
       "id": 5,
