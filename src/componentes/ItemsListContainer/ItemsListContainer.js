@@ -8,6 +8,7 @@ import { db } from "../../Firebase/config";
 
 
 
+
 const ItemsListContainer = () => {
 
 
@@ -25,7 +26,7 @@ const ItemsListContainer = () => {
         getDocs(q)
         .then((resp) => {
         setProducts(
-            resp.docs.map((doc)=>{
+            resp.docs.map( (doc) =>{
                 return {...doc.data(), id: doc.id}
             })
         ) 

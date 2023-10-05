@@ -5,8 +5,9 @@ import "../Carrito/Carrito.css"
 
 
 
+
 const Carrito = () =>{
-    const {carrito, limpiarCarrito, totalQuantity ,total, removerItems, totalEnCarrito} = useContext(CartContex)
+    const {carrito, limpiarCarrito, totalQuantity , removerItems, totalEnCarrito} = useContext(CartContex)
 
     if(totalQuantity === 0) {
         return (

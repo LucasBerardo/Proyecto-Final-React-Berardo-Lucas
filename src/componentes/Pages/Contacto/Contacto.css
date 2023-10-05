@@ -1,15 +1,32 @@
 div.container{
- 
 display: flex;
 flex-direction:  column;
 }
 
-.formulario{
+.container-form{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 35px;
-    width: 500px;
+}
+
+form.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.form-input{
+    margin: 5px;
+}
+
+.enviar{
+    width: 80px;
+    margin: 5px;
+    border: 3px solid;
+    font-weight: bold;
+
 }
