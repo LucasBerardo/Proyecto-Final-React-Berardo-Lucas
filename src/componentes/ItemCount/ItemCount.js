@@ -17,6 +17,7 @@ const decrement = () =>{
 }
 
 return (
+   
     <div>
         <div className="detail">
             <button onClick={decrement} className="button-decrement"> -
@@ -26,7 +27,7 @@ return (
             </button>
             </div>
             <div className="agregar-prod">
-            { stock? 
+            { stock >=1 ? 
         <button className="button-agregar" onClick={()=> onAdd (cantidad)} diasabled={!stock}>
             Agregar al Carrito </button>
             :

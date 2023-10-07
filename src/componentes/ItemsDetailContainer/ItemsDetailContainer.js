@@ -11,10 +11,7 @@ const ItemsDetailContainer = () => {
     const [products, setProducts] = useState(null)
     const id = useParams().id;
 
-    const [loading, setLoading]=useState(false)
-
     useEffect (()=>{
-        setLoading(true)
         const docRef = doc (db, "Productos", id);
     getDoc(docRef)
     .then((resp)=>{
@@ -25,16 +22,12 @@ const ItemsDetailContainer = () => {
     .catch (error=>{
         console.error(error);
     })
-    .finally( () => setLoading (false) )
     }, [id])
 
 
 return (
     <div className="productos-detail">
-        {
-            loading ? (<span className="loader">Loading...</span>) : (<ItemsDetail {...products}/>)
-        }
-        
+            <ItemsDetail {...products}/>
     </div>
 )
 

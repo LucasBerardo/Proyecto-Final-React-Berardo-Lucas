@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 export const CartContex = createContext({
     carrito: []
@@ -6,14 +7,20 @@ export const CartContex = createContext({
 
 const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const productoRepetido = () =>{
+    Swal.fire({
+        icon: 'error',
+        text: 'El producto ya fue agregado al carrito',
+      })
+}
+
 export const CartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState(carritoInicial);
 
 const agregarItems = (items, cantidad) =>{
     if(!inCart(items.id)){
         setCarrito(prev=>[...prev, {...items,cantidad}])
-    } else {
-        alert("el prdocuto ya fue agregado")
+    } else { productoRepetido()
     }
 }
 
@@ -22,7 +29,6 @@ const removerItems = (itemsId)=> {
     setCarrito(cartUpdate)
     console.log(cartUpdate)
     }
-
 
 const limpiarCarrito = () => {
     setCarrito ([])

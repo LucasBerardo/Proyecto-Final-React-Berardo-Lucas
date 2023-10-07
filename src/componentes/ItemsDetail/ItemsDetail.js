@@ -4,7 +4,7 @@ import "./ItemsDetail.css"
 import { Link } from "react-router-dom"
 import { CartContex } from "../../Context/CartContext"
 
-const ItemsDetail = ({id,nombre,img,precio,stock,categoria}) =>{
+const ItemsDetail = ({id,nombre,img,precio,stock,categoria,descripcion}) =>{
 
     const [cantidadAgregada, setcantidadAgregada] = useState(0);
 
@@ -12,7 +12,7 @@ const ItemsDetail = ({id,nombre,img,precio,stock,categoria}) =>{
     const agregarProducto = (quantity ) =>{
         setcantidadAgregada(quantity)
         const items = {
-            id,nombre, precio, img
+            id,nombre, precio, img, descripcion
         }
         agregarItems( items, quantity)
     }
@@ -28,21 +28,15 @@ const ItemsDetail = ({id,nombre,img,precio,stock,categoria}) =>{
                 <img className="img-prod"src={`/img/${img}`} alt={nombre}/>
             </picture>
             <section>
-                <p>
-                    Precio: ${precio}
-                </p>
-                <p>
-                    Stock Disponible: {stock}
-                </p>
-                <p>
-                   Categoria: {categoria}
-                </p>
+                <p className="dellate-articulo"> Precio: ${ precio } </p>
+                <p className="dellate-articulo"> Stock Disponible: { stock } </p>
+                <p className="dellate-articulo"> Categoria: { categoria } </p> 
+                <p className="dellate-articulo">Descripcion: {descripcion}</p>
             </section>
                 {
                     cantidadAgregada > 0 ? (
-                        <Link to ='/Carrito' className="terminar-compra"> Terminar Compra </Link>
+                        <Link to ='/Carrito' className="terminar-compra"> Finalizar Compra </Link>
                     ) : (
-        
             <ItemsCount initial={1} stock={stock} onAdd={agregarProducto} />
             )
         }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Productos.css";
 import ItemsListContainer from "../../ItemsListContainer/ItemsListContainer";
 
 const Productos = () => {

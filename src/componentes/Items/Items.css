@@ -1,16 +1,10 @@
 div.card {
     background-color: rgba(173, 179, 154);
     justify-content: center;
-    opacity: 0.85;
 margin: 10px;
 box-shadow: 2px 2px 2px 2px;
 text-align: center;
 padding: 0;
-
-&:hover {
-    opacity: 1;
-    }
-
 }
 
 img.img-prod {

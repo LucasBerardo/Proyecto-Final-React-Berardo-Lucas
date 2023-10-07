@@ -1,16 +1,10 @@
 card.card {
     background-color: rgba(173, 179, 154);
     justify-content: center;
-    opacity: 0.85;
 margin: 60px 500px;
 box-shadow: 2px 2px 2px 2px;
 text-align: center;
 padding: 0;
-
-&:hover {
-    opacity: 1;
-    }
-
 }
 
 a.terminar-compra{
@@ -24,3 +18,9 @@ a.terminar-compra{
       font-weight: bold;
 }
 
+.dellate-articulo{
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}

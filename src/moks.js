@@ -5,7 +5,8 @@ const products = [
       "img": "nueces1.jpg",
       "precio": 1000,
       "stock": 10,
-      "categoria": "Frutas Abrillantadas"
+      "categoria": "Frutas Abrillantadas",
+      "descripcion": "Nueces mariposas x 1kg"
     },
 
     {
@@ -14,7 +15,8 @@ const products = [
       "img": "almendras.webp",
       "precio": 2000,
       "stock": 5,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Almendras x 1kg"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@ const products = [
       "img": "pistachos.jpg",
       "precio": 1500,
       "stock": 30,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Pistachos con cascaras x 1kg"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@ const products = [
       "img": "avellanas.jpg",
       "precio": 1850,
       "stock": 41,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Avellanas con cascara x 1kg"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@ const products = [
       "img": "castañas.jpg",
       "precio": 1850,
       "stock": 15,
-      "categoria": "Condimentos"
+      "categoria": "Condimentos",
+      "descripcion": "Castañas por 2kg"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@ const products = [
       "img": "Coco.webp",
       "precio": 1800,
       "stock": 69,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Coco en Hebras x 1 kg"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@ const products = [
       "img": "pasasdeuvas.jpg",
       "precio": 700,
       "stock": 0,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Pasas de uvas negras x 1kg"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@ const products = [
       "img": "mani.png",
       "precio": 600,
       "stock": 70,
-      "categoria": "Frutos Secos"
+      "categoria": "Frutos Secos",
+      "descripcion": "Mani pelado sin sal x 1kg"
     }
     ]
 
@@ -71,7 +79,7 @@ const products = [
       return new Promise ((resolve) =>{
           setTimeout ( ()=>{
               resolve (products)
-          },500)
+          },200)
   
          
       })}
@@ -80,7 +88,7 @@ const products = [
         return new Promise ((resolve) =>{
             setTimeout ( ()=>{
                 resolve(products.find (prod => prod.id === productsId));
-            },500)
+            },200)
   
         })
   
